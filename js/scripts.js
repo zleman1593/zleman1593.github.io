@@ -27,9 +27,12 @@ $(document).ready(function () {
 		================================================== */		
 		var ut_word_rotator = function() {
 			var ut_rotator_words = [
-				'I AM AJAY MATHASURIYA',
-				'I LIKE TO WATCH MOVIE',
-				'I AM A BIKE RIDER'
+				'ZACK LEMAN',
+				'Entrepreneur',
+				'Philomath',
+				'FULL-STACK WEB DEVELOPER',
+				'PHOTOGRAPHER'
+
 			] ,
 			counter = 0;                
 			setInterval(function() {
