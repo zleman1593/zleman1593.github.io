@@ -201,7 +201,7 @@ color:#fff !important;}
 
 #home{ position: relative; overflow: hidden; height: 760px; }
 .banner {
-  background-image:url("../img/02-HomeSlider.jpg");
+  background-image:url("../img/06-parallax.jpg");
 background-position:  center top ;
 background-repeat:no-repeat;
   background-size:cover;
