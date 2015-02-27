@@ -371,7 +371,7 @@ $(document).ready(function () {
         }
 
         var fileID = $(this).attr('data-project-file');
-		
+		console.log(fileID);
         if (fileID != null) {
             $('html,body').animate({
                 scrollTop: $('#ajax-container').offset().top - 100
@@ -412,7 +412,7 @@ $(document).ready(function () {
 		limit: 5, 
 		replies: true,
 		position: 'append',
-		failed: "Sorry, twitter is currently unavailable for this user.",
+		failed: "Sorry, this isn't working yet. Give me a break. I just started the site today",
 		loading: "Loading tweets...",
 		html5: true,
 		onComplete:function($ul){
