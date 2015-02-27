@@ -9,18 +9,41 @@ $(window).load(function () {
 $(document).ready(function () {
     "use strict";
    
+   /* Parallax height
+		================================================== */
+		var windowHeight = $(window).height();
+		
+		$('#home').height( windowHeight );
+		
+		$(window).resize(function() {
+			
+			var windowHeight = $(window).height();
+			$('#home').height( windowHeight );
+			
+		});
+		
+		
+   /* Banner text rotator
+		================================================== */		
+		var ut_word_rotator = function() {
+			var ut_rotator_words = [
+				'I AM AJAY MATHASURIYA',
+				'I LIKE TO WATCH MOVIE',
+				'I AM A BIKE RIDER'
+			] ,
+			counter = 0;                
+			setInterval(function() {
+			$(".banner-text-rotator").fadeOut(function(){$(this).html(ut_rotator_words[counter=(counter+1)%ut_rotator_words.length]).fadeIn();});}, 4000 );
+		}
+		ut_word_rotator();
+		
     // Smooth Scroll to internal links
     $('.smooth-scroll').smoothScroll({
         offset: -45,
-        speed: 500
+        speed: 400
     });
 
-    // Initialize Home Sliders
-    $('#home-slider').flexslider({
-        directionNav: false,
-		controlNav:true
-    });
-	
+
 	//Initializez Testimonial Slider
     $('#testimonials-slider').flexslider({
         directionNav: false,
@@ -62,9 +85,9 @@ $(document).ready(function () {
 			//		if (visible === true) {$(this).addClass('visible-section');}
 			//	});
 			//Scale pricing tabel popular block
-			$('.trigger-value').bind('inview', function (event, visible) {
-					if (visible === true) {$(this).addClass('value');}
-				});
+			//$('.trigger-value').bind('inview', function (event, visible) {
+			//		if (visible === true) {$(this).addClass('value');}
+			//	});
 			//Work section corner image visibility turn
 			$('#work').bind('inview', function (event, visible) {
 					if (visible === true) {$('.corner-work').css('opacity', 1);	}else$('.corner-work').css('opacity', 0);					
@@ -95,28 +118,10 @@ $(document).ready(function () {
 		}
     }
 
-    // Adjust slide height for smaller screens
-    if ($(window).height() < 510) {
-        $('#home-slider .slides li').css('height', $(window).height());
-    }
-    $('#home-slider .slides li').each(function () {
-
-        var imgSrc = $(this).children('.slider-bg').attr('src');
-        $(this).css('background', 'url("' + imgSrc + '")');
-        $(this).children('.slider-bg').remove();
-
-        var slideHeight = $(this).height();
-        var contentHeight = $(this).children('.slide-content').height();
-        var padTop = (slideHeight / 2) - (contentHeight / 2);
-
-        $(this).children('.slide-content').css('padding-top', padTop);
-
-    });
-
     // Sticky Nav
     $(window).scroll(function () {
 
-        if ($(window).scrollTop() > 610) {
+        if ($(window).scrollTop() > windowHeight-70) {
             $('#navigation').addClass('sticky-nav');
         } else {
             $('#navigation').removeClass('sticky-nav');
@@ -140,7 +145,7 @@ $(document).ready(function () {
 	
 	//Trun Gallery Block Text rotator
 	if( !device.mobile() ) {
-	/* Gallery block-20 Word Rotator
+	/* Gallery block-5 Word Rotator
 		================================================== */		
 		var ut_word_rotator = function() {
 			var ut_rotator_words = [
@@ -149,7 +154,7 @@ $(document).ready(function () {
 			] ,
 			counter = 0;                
 			setInterval(function() {
-			$(".gallery-text-rotate20").fadeOut(function(){$(this).html(ut_rotator_words[counter=(counter+1)%ut_rotator_words.length]).fadeIn();});}, 4000 );
+			$(".gallery-text-rotate5").fadeOut(function(){$(this).html(ut_rotator_words[counter=(counter+1)%ut_rotator_words.length]).fadeIn();});}, 4000 );
 		}
 		ut_word_rotator();
 		
@@ -345,6 +350,7 @@ $(document).ready(function () {
 		});
 	}
 	initPieCharts();
+	
 		
     // Portfolio filterable grid
 	jQuery('#portfolio-grid').mixitup({
@@ -410,4 +416,5 @@ $(document).ready(function () {
 			$('time').timeago();
 		}
 	});
+
 });

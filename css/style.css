@@ -7,7 +7,7 @@ input{ -webkit-appearance: none; }
 input:focus{ outline: none; }
 .border-bottom{ border-bottom: 2px solid #fff; height: 32px; }
 .nopad{ padding: 0px; }
-.pad-normal{ padding-top: 4em; padding-bottom:0px; }
+.pad-normal{ padding-top: 83px; padding-bottom:0px; }
 .pad-large{ padding-top: 83px; padding-bottom: 83px; }
 .pad-top{ padding-top: 40px; }
 .pad-bottom{ padding-bottom: 40px; }
@@ -57,12 +57,6 @@ left: 50%;top: 50%;position: absolute;width:50px;margin: -25px 0 0 -25px;}
 	display:block;
 	z-index:2;
 }
-.parallax1-teaser-bg{background-image:url("../img/05-parallax.jpg");opacity:.8;-webkit-opacity:.8;-moz-opacity:.8;}
-.parallax2-teaser-bg{background-image:url("../img/05-parallax.jpg");opacity:.8;-webkit-opacity:.8;-moz-opacity:.8;}
-.parallax3-teaser-bg{background-image:url("../img/21-twitter-bg.jpg");opacity:.8;-webkit-opacity:.8;-moz-opacity:.8;}
-.parallax4-teaser-bg{background-image:url("../img/07-parallax.jpg");opacity:.8;-webkit-opacity:.8;-moz-opacity:.8;}
-
-.info-container .info .slogan{margin-top:0 !important;position:relative !important}
 .text-white{ color: #fff; }
 .visible-section{opacity:1;-webkit-opacity:1;-moz-opacity:1;-webkit-transition: all 2.5s; transition: all 2.5s; 	-moz-transition: all 2.5s;-o-transition:all 2.5s;}
 h1, h2, h3, h4, h5, h6, a{
@@ -104,8 +98,7 @@ color:#fff !important;}
 .sub-header:after {right: 0;}
 .sub-header {font-size: 20px;font-style: italic; font-weight: 500;line-height: 32px;
     text-align: center;text-transform: none;}
-.sub-header {clear:both;display: inline-block;padding: 0 5em;margin-bottom: 1.6em;position: relative;
- }
+.sub-header {clear:both;display: inline-block;padding: 0 5em;margin-bottom: 1.6em;position: relative;}
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .sub-header { padding: 0 2em;}
 	.sub-header:before, .sub-header:after { width: 2em;}
@@ -116,12 +109,10 @@ color:#fff !important;}
 }
 
 /* common style for parallax background */
-.parallax {color: #FFFFFF;overflow: hidden;position: relative;width: 100%;z-index: 0;
- height: 850px;
-}
+.parallax {color: #FFFFFF;height: 600px;overflow: hidden;position: relative;width: 100%;z-index: 0;}
 .parallax-bg{width: 100%;height: 100%;position: absolute;background-attachment: fixed;background-position: center top;background-repeat: repeat-y;
  background-size: cover;margin: 0 auto;}
-.info-container{display: table;height: 100%;background: url("../img/03_overlay_pattern.png") repeat scroll left top;
+.info-container{display: table;height: 100%;
     margin: 0 !important;padding: 0 !important;width: 100%;}
 .info-container .info{display: table-cell;vertical-align: middle;}
 
@@ -151,7 +142,7 @@ color:#fff !important;}
     cursor: pointer;
     height: 40px;
     left: 50%;
-    margin-bottom:0px;
+    margin-bottom: 35px;
     margin-left: -20px;
     margin-top: 35px;
     position: absolute;
@@ -186,14 +177,13 @@ color:#fff !important;}
 
 	
 /***** NAVIGATION *****/
-#navigation{position: absolute; top: 0px; max-height: 70px; z-index: 999; width: 100%; padding-top: 22px; overflow: hidden;
+#navigation{position: absolute; bottom: 0px; max-height: 70px; z-index: 999; width: 100%; padding-top: 22px; overflow: hidden;
 	-webkit-transition: all 1s; 
 	transition: all 1s; 
 	-moz-transition: all 1s;
 	-o-transition:  all 1s;
 	box-shadow:0 1px 100px -8px #000;
 }
-
 .logo{}
 .open-nav{ max-height: 400px !important; }
 #menu{ list-style: none; overflow: hidden; text-align: right; float: right; }
@@ -203,21 +193,43 @@ color:#fff !important;}
 
 #mobile-toggle{ display: none; cursor: pointer; font-size: 28px; position: absolute; right: 22px; top: 22px;color:#fff; }
 .sticky-nav-primary{background-color: #FE8E22 !important;}
-.sticky-nav{ position: fixed !important; background-color: #1B2B3B ;}
+.sticky-nav{ position: fixed !important; background-color: #1B2B3B ;top:0px !important;box-shadow:none !important;}
 
 /*******************************************
  HOME SECTION 
  *******************************************/
 
-#home{ position: relative; overflow: hidden; }
-
-#home .flex-control-nav{ bottom: 83px;}
-#home-slider{position:relative;}
-#home-slider .slides li{ height: 760px; position: relative; background-size: cover !important; background-attachment: fixed !important; }
-#home-slider .slides li:before{ position: absolute; content: ''; width: 100%; height: 100%;  opacity:0;-webkit-opacity:0;-moz-opacity:0; }
-#home .btn{}
-.banner-title{  text-align: center; margin-bottom: 40px; }
-.banner-title h1 {clear: both; margin-right: -5px; padding: 52px 0 0;font-weight:900; }
+#home{ position: relative; overflow: hidden; height: 760px; }
+.banner {
+  background-image:url("../img/02-HomeSlider.jpg");
+background-position:  center top ;
+background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  font-size: 1em;
+  height: 100%;
+  overflow: hidden;
+}
+.banner-pattern{
+/* If You want can set pattern background here
+ background: url("../img/02_overlayPattern.png") repeat scroll left top rgba(0, 0, 0, 0); */
+    height: 100%;
+   margin-top: 0;
+  margin-bottom: 0;
+    padding:0;
+    width: 100%;
+	display:table;
+}
+.banner .row {
+  text-align: center;
+   display:table-cell;
+    vertical-align: middle;
+}
+.banner-title{text-align: center; margin-bottom: 40px;}
+.banner-title h1 {clear: both; margin-right: -5px; padding:0px 0 0;font-weight:900;-webkit-transition: -webkit-filter 0.6s ease 0s;
+	transition: -webkit-filter 0.6s ease 0s;
+	-moz-transition: -webkit-filter 0.6s ease 0s;
+	-o-transition:-webkit-filter 0.6s ease 0s; }
 .sideline {
     animation-delay: 0.9s;
     animation-duration: 0.7s;
@@ -254,7 +266,7 @@ color:#fff !important;}
     font-size: 42px;
     font-weight: 600;
     margin-bottom: 0.25em;
-    margin-top:0;
+    margin-top: -3em;
     padding: 0;
 }
 .title h2 {
@@ -292,7 +304,6 @@ color:#fff !important;}
 	
 	.sideline{display:none;}
 }
-
 /*******************************************
  ABOUT SECTION 
  *******************************************/
@@ -773,7 +784,7 @@ p.my-skill-text {
     margin: 0;
     text-align: center;}
 .timestamp{color:#1B2B3B;}
-.twitter-teaser-bg{background-image:url("../img/07-parallax.jpg");opacity:.9;-webkit-opacity:.9;-moz-opacity:.9;}
+.twitter-teaser-bg{background-image:url("../img/07-parallax.jpg");opacity:.3;-webkit-opacity:.3;-moz-opacity:.3;}
 .twitter-content_footer {
     bottom: 0;
     height: 145px;

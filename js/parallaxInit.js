@@ -11,7 +11,8 @@ $(window).bind('load', function () {
 		testMobile = isMobile.any();
 		if (testMobile == null)
 		{
-			$('.twitter-teaser-bg').parallax("50%", 0.4);
+			$('.twitter-teaser-bg').parallax("50%", 0.5);
+			$('.banner').parallax("50%", 0.5);
 			
 		}
 	}	
