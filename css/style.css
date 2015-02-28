@@ -186,7 +186,7 @@ color:#fff !important;}
 }
 .logo{}
 .open-nav{ max-height: 400px !important; }
-#menu{ list-style: none; overflow: hidden; text-align: right; float: right; }
+#menu{ list-style: none; overflow: hidden; text-align: center;  }
 #menu li{ float: left; margin-right: 12px; }
 #menu li h6{font-size: 14px; padding:5px 5px 0 20px !important;font-weight:normal; letter-spacing:1px; line-height:normal !important;color:#fff;}
 #menu li i{ color: #fff; font-size: 24px; }
@@ -1126,7 +1126,7 @@ line-height:30px;
 
 	#navigation{ background-color: #1B2B3B; padding-top: 25px; }
 	#mobile-toggle{ display: block; }
-	#menu{ float: left; padding-top: 21px; margin-bottom: 22px; }
+	#menu{ padding-top: 21px; margin-bottom: 22px; margin-right: auto; margin-left: auto;}
 	#menu li{ float: none; }
 	#menu li i{ display: none; }
 	#filters li{ margin-bottom: 22px; }
