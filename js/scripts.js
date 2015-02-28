@@ -93,7 +93,9 @@ $(document).ready(function () {
 			//	});
 			//Work section corner image visibility turn
 			$('#work').bind('inview', function (event, visible) {
-					if (visible === true) {$('.corner-work').css('opacity', 1);	}else$('.corner-work').css('opacity', 0);					
+					if (visible === true) {$('.corner-work').css('opacity', 1);	} 
+					else {
+						$('.corner-work').css('opacity', 0);}					
 				});
 			
 			//Section Heading text effect	
