@@ -1171,3 +1171,24 @@ and (orientation : portrait) {
 	#menu li i{ display: none; }
 
 }
+
+
+.large-4 img{
+  max-height: 150px;
+}
+
+.press:before {left: 0;}
+.press:before, .press:after {content: ""; display: inline-block;
+    position: absolute;top: 50%; width: 4em;}
+.press:after {right: 0;}
+.press {font-size: 20px;font-style: italic; font-weight: 500;line-height: 32px;
+    text-align: center;text-transform: none;}
+.press {clear:both;display: inline-block;padding: 0 5em;margin-bottom: 1.6em;position: relative;}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .spress { padding: 0 2em;}
+  .press:before, .press:after { width: 2em;}
+}
+@media only screen and (max-width: 479px) {
+  .press { padding: 0 1em;}
+  .press:before, .press:after { width: 1em;}
+}
