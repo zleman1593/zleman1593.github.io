@@ -1129,6 +1129,9 @@ line-height:30px;
 	#menu{ padding-top: 21px; margin-bottom: 22px; margin-right: auto; margin-left: auto;}
 	#menu li{ float: none; }
 	#menu li i{ display: none; }
+  #menu li h6 {
+font-size: 30px;
+}
 	#filters li{ margin-bottom: 22px; }
 	.value{ 
 		transform: scale(1,1);
