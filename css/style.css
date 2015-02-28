@@ -1180,6 +1180,10 @@ and (orientation : portrait) {
   max-height: 150px;
 }
 
+#skill{
+  background: #f7f7f7;
+}
+
 .press:before {left: 0;}
 .press:before, .press:after {content: ""; display: inline-block;
     position: absolute;top: 50%; width: 4em;}
