@@ -10,7 +10,7 @@ input:focus{ outline: none; }
 .pad-normal{ padding-top: 83px; padding-bottom:0px; }
 .pad-large{ padding-top: 83px; padding-bottom: 83px; }
 .pad-top{ padding-top: 40px; }
-.pad-bottom{ padding-bottom: 40px; }
+.pad-bottom{ padding-bottom: 40px; background: #f7f7f7; }//TODO
 .clearfix:before,
 .clearfix:after {
   display: table;
