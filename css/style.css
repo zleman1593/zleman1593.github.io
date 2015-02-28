@@ -737,11 +737,11 @@ p.my-skill-text {
 }
  #work .action .btn{margin:20px 0 0px 0;}
 #ajax-container{ 
-	overflow: hidden; 
+	//overflow: hidden; 
 	-webkit-transition: max-height 1s, opacity 0.5s; 
 	transition: max-height 1s, opacity 0.5s; 
 	-moz-transition: max-height 1s, opacity 0.5s;
-	max-height: 1000px;
+	//max-height: 1000px;
 	opacity: 1;-webkit-opacity:1;-moz-opacity:1;
 }
 .closed-container{ max-height: 0px !important; opacity: 0 !important;-webkit-opacity:0;-moz-opacity:0;  }
@@ -1187,6 +1187,10 @@ and (orientation : portrait) {
 
 
 .large-4 img{
+  max-height: 150px;
+}
+
+.limit-image img{
   max-height: 150px;
 }
 
