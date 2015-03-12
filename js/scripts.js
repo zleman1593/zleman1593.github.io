@@ -382,7 +382,8 @@ $(document).ready(function () {
         }
 
         $.ajax({
-            url: fileID
+            url:  "projects/
+            " + fileID
         }).success(function (data) {
 			$('#ajax-container').addClass('open-container');
             $('#ajax-container').html(data);
