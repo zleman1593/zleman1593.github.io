@@ -655,7 +655,7 @@ p.my-skill-text {
   opacity: 0;-webkit-opacity:0;-moz-opacity:0;}
 .work-column{}
 .project-img-holder{ overflow: hidden; position: relative; }
-.project-img-holder img{width:100%;opacity:.2;-webkit-opacity:.2;-moz-opacity:.2;
+.project-img-holder img{max-height:80%;width:100%;opacity:.2;-webkit-opacity:.2;-moz-opacity:.2;
  -webkit-transition-duration: 0.8s;
      -moz-transition-duration: 0.8s;
       -ms-transition-duration: 0.8s;
