@@ -77,7 +77,7 @@ $(document).ready(function () {
         p = navigator.platform;
 
     if (p === 'iPad' || p === 'iPhone' || p === 'iPod') {
-        //iOS = true;
+        iOS = true;
     }
     
     if(iOS == false){
