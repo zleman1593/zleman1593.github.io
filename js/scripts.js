@@ -405,21 +405,6 @@ $(document).ready(function () {
 
     });
 
-	//Twitter feed
-	jQuery('#tweets').tweetable({
-		username: 'zackeryleman', //twitter username 
-		time: true, 
-		rotate: true, 
-		speed: 7000, 
-		limit: 5, 
-		replies: true,
-		position: 'append',
-		failed: "Sorry, this isn't working yet. Give me a break. I just started the site today",
-		loading: "Loading tweets...",
-		html5: true,
-		onComplete:function($ul){
-			$('time').timeago();
-		}
-	});
+	
 
 });
