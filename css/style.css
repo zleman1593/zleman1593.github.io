@@ -4,7 +4,8 @@ menu, ol, ul {
 }
 
 #skills-chart {
-    margin-top: 40px
+    margin-top: 40px;
+    margin-left: 10px;
 }
 #skills-chart .chart-title {
     margin: 0 0 160px 0
@@ -130,7 +131,6 @@ menu, ol, ul {
 @media screen and (min-width: 1024px) {
    
     #skills-chart {
-        margin-top: 120px;
         margin-bottom: 100px;
         width: 938px;
         margin-left: auto;
@@ -317,12 +317,7 @@ menu, ol, ul {
         height: 44%
     }
 }
-@media screen and (min-width: 1200px) {
-  
-    #skills-chart {
-        margin-top: 180px
-    }
-}
+
 
 
 
