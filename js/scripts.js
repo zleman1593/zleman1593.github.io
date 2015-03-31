@@ -31,6 +31,7 @@ $(document).ready(function () {
 				'Entrepreneur',
 				'Philomath',
 				'FULL-STACK WEB DEVELOPER',
+				'iOS DEVELOPER',
 				'PHOTOGRAPHER'
 
 			] ,
