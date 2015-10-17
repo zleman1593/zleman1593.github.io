@@ -3,7 +3,7 @@
 $(window).load(function () {
     "use strict";
    	$("#status").fadeOut();
-	$("#preloader").delay(350).fadeOut("slow");
+	// $("#preloader").delay(350).fadeOut("slow");
 });
 
 $(document).ready(function () {
@@ -301,12 +301,17 @@ $(document).ready(function () {
 
 	// });
 
-	// $grid.isotope({
+	// $('#portfolio-grid').isotope({
  //  		itemSelector: '.project',
  //  		layoutMode: 'fitRows',
 
 	// })
-	
+	var elem = document.querySelector('#portfolio-grid')
+	 iso = new Isotope( elem, {
+  // options
+  itemSelector: '.project',
+  layoutMode: 'fitRows'
+})
     // portfolio project Clicks with AJAX call
     $('.project-title a').click(function (event) {
         event.preventDefault();
