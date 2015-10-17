@@ -306,12 +306,12 @@ $(document).ready(function () {
  //  		layoutMode: 'fitRows',
 
 	// })
-	var elem = document.querySelector('#portfolio-grid')
-	 iso = new Isotope( elem, {
-  // options
-  itemSelector: '.project',
-  layoutMode: 'fitRows'
-})
+// 	var elem = document.querySelector('#portfolio-grid')
+// 	 iso = new Isotope( elem, {
+//   // options
+//   itemSelector: '.project',
+//   layoutMode: 'fitRows'
+// })
     // portfolio project Clicks with AJAX call
     $('.project-title a').click(function (event) {
         event.preventDefault();
