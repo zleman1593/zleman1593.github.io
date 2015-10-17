@@ -978,7 +978,7 @@ p.my-skill-text {
 .project{ width:25%;margin:0px;padding:0;}
 .work-column{}
 .project-img-holder{ overflow: hidden; position: relative; }
-.project-img-holder img{height:250px;width:100%;
+.project-img-holder img{height:250px;
  -webkit-transition-duration: 0.8s;
      -moz-transition-duration: 0.8s;
       -ms-transition-duration: 0.8s;
@@ -993,7 +993,7 @@ p.my-skill-text {
           transition-duration: 0.8s;
 	opacity:.9;
 }
-.project:hover .project-title{background:rgba(255,255,255,1);font-weight:900;}
+.project:hover .project-title{background:rgba(100,100,100,1);font-weight:900;}
 .project:hover .arrow-up{border-bottom: 30px solid rgba(255,255,255,1);}
 .project:hover .arrow-holder{bottom:8px;}
 .project-title{  background:rgba(241,241,241,.8);
