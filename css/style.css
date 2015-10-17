@@ -1,4 +1,14 @@
 
+.skill-list {
+list-style: none;
+}
+
+
+.skill-list li{
+list-style: none;
+}
+
+
 menu, ol, ul {
     padding: 0
 }
