@@ -301,11 +301,11 @@ $(document).ready(function () {
 
 	// });
 
-	$grid.isotope({
-  		itemSelector: '.project',
-  		layoutMode: 'fitRows',
+	// $grid.isotope({
+ //  		itemSelector: '.project',
+ //  		layoutMode: 'fitRows',
 
-	})
+	// })
 	
     // portfolio project Clicks with AJAX call
     $('.project-title a').click(function (event) {
