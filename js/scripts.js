@@ -9,6 +9,11 @@ $(window).load(function () {
 $(document).ready(function () {
     "use strict";
    
+   var elem = document.querySelector('#portfolio-grid')
+ var iso = new Isotope( elem, {
+   					itemSelector: '.project',
+   					layoutMode: 'fitRows' });
+
    /* Parallax height
 		================================================== */
 		var windowHeight = $(window).height();
@@ -312,6 +317,20 @@ $(document).ready(function () {
 //   itemSelector: '.project',
 //   layoutMode: 'fitRows'
 // })
+$('#filters li').click(function (event) {
+        event.preventDefault();
+		console.log($(event.target).attr("data-filter"));
+		
+ 	// 	iso.arrange({
+  // 		// show all again
+  // 			filter: "'*"
+		// });
+		iso.arrange({
+  			filter: $(event.target).attr("data-filter")
+		});
+    });
+
+
     // portfolio project Clicks with AJAX call
     $('.project-title a').click(function (event) {
         event.preventDefault();
