@@ -261,76 +261,13 @@ $(document).ready(function () {
 		ut_word_rotator();
 	}
 	
-	// Team Members Carousel
-	jQuery(".team-slider").owlCarousel({
-		lazyLoad : true,
-		slideSpeed : 300,
-		stopOnHover: true,
-		paginationSpeed : 400,
-		autoPlay: 3500,
-		navigation : false,
-		pagination : false,
-		autoHeight : true,
-		touchDrag:true,
-		items : 4, //10 items above 1000px browser width
-		itemsDesktop : [1000,3], //5 items between 1000px and 901px
-		itemsDesktopSmall : [900,2], // betweem 900px and 601px
-		itemsTablet: [600,2], //2 items between 600 and 0
-		itemsMobile : [420,1],
-	});
+	
 		
-	// Service Carousel
-	jQuery(".service-slider").owlCarousel({
-		lazyLoad : true,
-		slideSpeed : 300,
-		stopOnHover: true,
-		paginationSpeed : 400,
-		autoPlay: false,
-		navigation : true,
-		navigationText : ["",""],
-		pagination : false,
-		autoHeight : false,
-		items : 3, //10 items above 1000px browser width
-		itemsDesktop : [1000,3], //5 items between 1000px and 901px
-		itemsDesktopSmall : [900,2], // betweem 900px and 601px
-		itemsTablet: [600,1], //2 items between 600 and 0
-		itemsMobile : [420,1],
-	});
+	
 		
-	// client Carousel
-	jQuery(".client-slider").owlCarousel({
-		lazyLoad : true,
-		slideSpeed : 300,
-		stopOnHover: true,
-		paginationSpeed : 400,
-		autoPlay: 3500,
-		navigation : false,
-		pagination : false,
-		autoHeight : true,
-		items : 4, //10 items above 1000px browser width
-		itemsDesktop : [1000,4], //5 items between 1000px and 901px
-		itemsDesktopSmall : [900,3], // betweem 900px and 601px
-		itemsTablet: [600,2], //2 items between 600 and 0
-		itemsMobile : [420,1],
-	});
+	
 		
-	// blog Carousel
-	jQuery(".blog-slider").owlCarousel({
-		lazyLoad : true,
-		slideSpeed : 300,
-		stopOnHover: true,
-		paginationSpeed : 400,
-		autoPlay: 3500,
-		navigation : true,
-		navigationText : ["",""],
-		pagination : false,
-		autoHeight : true,
-		items : 2, //10 items above 1000px browser width
-		itemsDesktop : [1000,2], //5 items between 1000px and 901px
-		itemsDesktopSmall : [900,1], // betweem 900px and 601px
-		itemsTablet: [600,1], //2 items between 600 and 0
-		itemsMobile : [420,1],
-	});
+	
 	// Pie Charts
 	'use strict';
 	var pieChartClass = 'pieChart',
@@ -359,10 +296,16 @@ $(document).ready(function () {
 	
 		
     // Portfolio filterable grid
-	jQuery('#portfolio-grid').mixitup({
-		targetSelector: '.project',
+	// jQuery('#portfolio-grid').mixitup({
+	// 	targetSelector: '.project',
 
-	});
+	// });
+
+	$grid.isotope({
+  		itemSelector: '.project',
+  		layoutMode: 'fitRows',
+
+	})
 	
     // portfolio project Clicks with AJAX call
     $('.project-title a').click(function (event) {
