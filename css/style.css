@@ -975,8 +975,7 @@ p.my-skill-text {
     list-style-type: none;
     padding: 0;
 }
-.project{ width:25%;margin:0px;float:left;padding:0;  display: none;
-  opacity: 0;-webkit-opacity:0;-moz-opacity:0;}
+.project{ width:25%;margin:0px;padding:0;}
 .work-column{}
 .project-img-holder{ overflow: hidden; position: relative; }
 .project-img-holder img{height:250px;width:100%;
