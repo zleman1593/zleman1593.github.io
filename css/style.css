@@ -142,7 +142,7 @@ menu, ol, ul {
 }
 
 @media screen and (min-width: 1024px) {
-   
+
     #skills-chart {
         margin-bottom: 100px;
         width: 938px;
@@ -467,8 +467,8 @@ color:#fff !important;}
     top:83px;
     width: 111px;
 	z-index:2;
-	-webkit-transition: all .5s; 
-	transition: all .5s; 
+	-webkit-transition: all .5s;
+	transition: all .5s;
 	-moz-transition: all .5s;
 	 -o-transition: all .5s;
 }
@@ -512,11 +512,11 @@ color:#fff !important;}
 .owl-prev{font-family: FontAwesome;font-style: normal;font-weight: normal;line-height: 1;color: rgba(255, 255, 255, 0.2);display: block;
     font-size: 28px; margin: 0 auto;position: relative;content:"";text-align:center;}
 
-	
+
 /***** NAVIGATION *****/
 #navigation{position: absolute; bottom: 0px; max-height: 70px; z-index: 999; width: 100%; padding-top: 22px; overflow: hidden;
-	-webkit-transition: all 1s; 
-	transition: all 1s; 
+	-webkit-transition: all 1s;
+	transition: all 1s;
 	-moz-transition: all 1s;
 	-o-transition:  all 1s;
     -webkit-transform: translate3d(0,0,0);
@@ -527,7 +527,7 @@ color:#fff !important;}
 	box-shadow:0 1px 100px -8px #000;
 }
 .logo{}
-.open-nav{ max-height: 400px !important; 
+.open-nav{ max-height: 400px !important;
  -webkit-transform: translate3d(0,0,0);
   -moz-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
@@ -543,7 +543,7 @@ color:#fff !important;}
 .sticky-nav{ position: fixed !important; background-color: #1B2B3B ;top:0px !important;box-shadow:none !important;}
 
 /*******************************************
- HOME SECTION 
+ HOME SECTION
  *******************************************/
 
 #home{ position: relative; overflow: hidden; height: 760px; }
@@ -643,16 +643,16 @@ background-repeat:no-repeat;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-   
+
    .sideline{display:none;}
 }
 
 @media only screen and (max-width: 479px) {
-	
+
 	.sideline{display:none;}
 }
 /*******************************************
- ABOUT SECTION 
+ ABOUT SECTION
  *******************************************/
 
 #about{ position: relative;padding:4em 0;}
@@ -664,7 +664,7 @@ background-repeat:no-repeat;
   transition: all 0.4s ease-in-out 0s;}
 h4.about-us-title {margin: 10px 0 0;padding: 0;text-align: center;}
 p.about-us-text {margin: 10px 0!important; padding: 0;text-align: center;}
-.about:hover i{background:none;border:2px solid #1B2B3B;color: #1B2B3B; 
+.about:hover i{background:none;border:2px solid #1B2B3B;color: #1B2B3B;
 -webkit-transition: all 0.2s ease-out 0s;
   -moz-transition: all 0.2s ease-out 0s;
   -o-transition:  all 0.2s ease-out 0s;
@@ -673,11 +673,11 @@ p.about-us-text {margin: 10px 0!important; padding: 0;text-align: center;}
  -moz-transform:rotate(180deg);
  transform:rotate(180deg);
   }
- 
-  
+
+
 .circle {border: 10px solid rgba(0, 0, 0, 0.03);
     margin: 0 auto;overflow: hidden;position: relative;}
-.circle, .circle .front, .circle .back {height: 220px;width: 150px;}
+.circle, .circle .front, .circle .back {width: 250px;}
 .circle .front, .circle .back { padding: 0;}
 .opera  .circle .front, .opera .circle .back {
     height: 200px;width: 200px;}
@@ -703,7 +703,7 @@ p.about-us-text {margin: 10px 0!important; padding: 0;text-align: center;}
   -moz-transition:none 0s ease 0s;
   -o-transition: none 0s ease 0s;
   transition: none 0s ease 0s;
- 
+
 }
 .no-touch  .circle .flipper:hover {top: -233px;}
 .opera .no-touch .circle .flipper:hover {top: -213px;}
@@ -743,7 +743,7 @@ p.about-us-text {margin: 10px 0!important; padding: 0;text-align: center;}
 /*******************************************
  GALLERY SECTION
  *******************************************/
- 
+
 .gallery {width: 100%;}
 .gallery ul {list-style: none outside none; margin: 0; overflow: hidden; padding: 0;
 }
@@ -882,7 +882,7 @@ p.my-skill-text {
   -moz-transition:all 0.4s ease-in-out 0s;
   -o-transition: all 0.4s ease-in-out 0s;
   transition:all 0.4s ease-in-out 0s;
-}	
+}
 .careers-links a {
     display: block;
 }
@@ -949,11 +949,11 @@ p.my-skill-text {
 	background-image:url("../img/06-service-snow.gif");
 	background-repeat:no-repeat;
 	background-size:cover;
-	opacity:.04;-webkit-opacity:.04;-moz-opacity:.04; 
+	opacity:.04;-webkit-opacity:.04;-moz-opacity:.04;
 	background-position: center top;
 }
 .service{ max-width: 100%; margin: 0px 20px;}
-.service-container{ 
+.service-container{
     padding: 20px 0;
     position: relative;
     z-index: 1;
@@ -968,7 +968,7 @@ p.my-skill-text {
     font-style: italic;
     margin: 0 0 10px;
     padding: 0 5px;}
-	
+
 .action{padding-top:60px}
 .action h2{text-transform:none; text-align:center;}
 #services .action .btn{margin:20px 0 0px 0;}
@@ -1028,8 +1028,8 @@ p.my-skill-text {
           transition-duration: 0.8s;
 }
 .arrow-up {
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-left: 30px solid transparent;
 	border-right: 30px solid transparent;
 	border-bottom: 30px solid rgba(255,255,255,.8);
@@ -1067,15 +1067,15 @@ p.my-skill-text {
     top:83px;
     width: 111px;
 	z-index:2;
-	-webkit-transition: all .5s; 
-	transition: all .5s; 
+	-webkit-transition: all .5s;
+	transition: all .5s;
 	-moz-transition: all .5s;
 }
  #work .action .btn{margin:20px 0 0px 0;}
-#ajax-container{ 
-	//overflow: hidden; 
-	-webkit-transition: max-height 1s, opacity 0.5s; 
-	transition: max-height 1s, opacity 0.5s; 
+#ajax-container{
+	//overflow: hidden;
+	-webkit-transition: max-height 1s, opacity 0.5s;
+	transition: max-height 1s, opacity 0.5s;
 	-moz-transition: max-height 1s, opacity 0.5s;
 	//max-height: 1000px;
 	opacity: 1;-webkit-opacity:1;-moz-opacity:1;
@@ -1114,7 +1114,7 @@ p.my-skill-text {
 /*******************************************
  TESTIMONIALS SECTION
  *******************************************/
-#testimonials{background:#f2f2f2;color:#1B2B3B;} 
+#testimonials{background:#f2f2f2;color:#1B2B3B;}
 #testimonials p{ color:#303030; }
 #testimonials-slider{position:relative;}
 #clients{text-align: center; padding:33px 0;background:#fff;position:relative;}
@@ -1211,7 +1211,7 @@ color:#1B2B3B;
     font-weight: 400;
     line-height: 1;
     position: relative;
-    top: 1px;	
+    top: 1px;
 }
 .fonticon:before {content: "\f067";}
 .rectangle:hover {background-color:#1B2B3B;	-webkit-transition: background-color 0.6s ease 0s;transition: background-color 0.6s ease 0s;
@@ -1239,7 +1239,7 @@ color:#1B2B3B;
 	.blog-circle-img img{float:none;}
 	.blogpost-description {float: none;margin-left: 0;margin-top: 10px;position: static;}
 	}
-	
+
 
 /*******************************************
  CONTACT SECTION
@@ -1289,7 +1289,7 @@ input, textarea {
   -moz-transition: all 0.2s ease-out 0s;
   -o-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;
-	
+
     width: 100%;
 }
 button, input {
@@ -1355,7 +1355,7 @@ button, select {
 .social-links li {
     display: inline-block;
     margin-right: 15px;
-}	
+}
 .social-links a {
     display: block;
 }
@@ -1410,7 +1410,7 @@ button, select {
 
 /*==================================
         THEE STYLE SWITHER
-==================================*/ 
+==================================*/
 #style-switcher{text-align:center;padding-bottom:10px;}
 #style-switcher div h3 {
      color: #1D1D1D;
@@ -1479,12 +1479,12 @@ line-height:30px;
 font-size: 30px;
 }
 	#filters li{ margin-bottom: 22px; }
-	.value{ 
+	.value{
 		transform: scale(1,1);
 		-ms-transform: scale(1,1);
 		-webkit-transform: scale(1,1);
 		margin-bottom: 44px;
-		margin-top: 0px; 
+		margin-top: 0px;
 	}
 	.flex-control-nav{ display: none !important; }
 	#home-slider .slides li{ background-attachment: scroll !important; }
@@ -1495,8 +1495,8 @@ font-size: 30px;
 
 /***** TABLETS PORTRAIT & LANDSCAPE *****/
 
-@media only screen 
-and (min-device-width : 768px) 
+@media only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 	#home-slider .slides li{ background-attachment: scroll !important; }
 	#services{ background-attachment: scroll !important; }
@@ -1513,9 +1513,9 @@ and (max-device-width : 1024px) {
 
 /***** PORTRAIT TABLETS *****/
 
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : portrait) {
 	#menu li i{ display: none; }
 
